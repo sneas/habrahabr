@@ -1,0 +1,30 @@
+{
+  "name": "habrahabr-styleguide",
+  "version": "1.0.0",
+  "description": "Example of component-library usage",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node index.js",
+    "prewatch": "npm run compile",
+    "watch": "watch-run -p 'styleguide/**/*,index.js' npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sneas/habrahabr.git"
+  },
+  "keywords": [
+    "styleguide",
+    "habrahabr",
+    "component-library"
+  ],
+  "author": "Dima Snisarenko <snisarenkodima@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sneas/habrahabr/issues"
+  },
+  "homepage": "https://github.com/sneas/habrahabr#readme",
+  "devDependencies": {
+    "component-library": "2.6.0",
+    "watch-run": "1.2.5"
+  }
+}
