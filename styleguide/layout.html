@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        @font-face{font-family:'Fira Sans';font-style:normal;font-weight:500;src:url(/fonts/0/FiraSans/hg-FiraSans-Medium.eot);src:local("Fira Sans Medium"),local("FiraSans-Medium"),url(/fonts/0/FiraSans/hg-FiraSans-Medium.eot?#iefix) format("embedded-opentype"),url(/fonts/0/FiraSans/hg-FiraSans-Medium.woff2) format("woff2"),url(/fonts/0/FiraSans/hg-FiraSans-Medium.woff) format("woff"),url(/fonts/0/FiraSans/hg-FiraSans-Medium.ttf) format("truetype")}
+    </style>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:500" rel="stylesheet">
+
+    <script>
+        (function( w ){
+            document.documentElement.classList.add('fonts-loaded');
+        }(this));
+    </script>
+
+    <script src="https://habracdn.net/habr/javascripts/libs/jquery-1.8.3.min.js"></script>
+</head>
+<body class="nl">
+    <div class="layout">
+        <div class="layout__row layout__row_body">
+            <div class="layout__cell layout__cell_body">
+                <div class="column-wrapper column-wrapper_lists js-sticky-wrapper">
+                    {{ content | safe }}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

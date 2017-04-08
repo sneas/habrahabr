@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/sneas/habrahabr#readme",
   "devDependencies": {
-    "component-library": "2.6.0",
+    "component-library": "3.0.1",
     "watch-run": "1.2.5"
   }
 }

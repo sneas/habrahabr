@@ -1,0 +1,91 @@
+<div class="post post_teaser shortcuts_item focus" id="post_325968">
+    <div class="post__header">
+      <span class="post__time_published">
+         сегодня в 08:44
+      </span>
+
+        <h2 class="post__title">
+            <a href="https://habrahabr.ru/flows/develop/" class="post__flow" onclick="if (typeof ga === 'function') { ga('send', 'event', 'flow', 'feed page', 'Разработка'); }">Разработка</a><span class="post__title-arrow">&nbsp;→</span>
+            <a href="https://habrahabr.ru/post/325968/" class="post__title_link">Архаичные алгоритмы сжатия видео эпохи FMV-игр</a>
+        </h2>
+
+        <div class="hubs">
+            <a href="https://habrahabr.ru/hub/reverse-engineering/" class="hub " title="Вы не подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'Реверс-инжиниринг'); }">Реверс-инжиниринг</a><span class="profiled_hub" title="Профильный хаб">*</span>,
+            <a href="https://habrahabr.ru/hub/gamedev/" class="hub " title="Вы не подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'Разработка игр'); }">Разработка игр</a><span class="profiled_hub" title="Профильный хаб">*</span>,
+            <a href="https://habrahabr.ru/hub/image_processing/" class="hub subscribed" title="Вы подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'Обработка изображений'); }">Обработка изображений</a><span class="profiled_hub" title="Профильный хаб">*</span>,
+            <a href="https://habrahabr.ru/hub/algorithms/" class="hub subscribed" title="Вы подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'Алгоритмы'); }">Алгоритмы</a><span class="profiled_hub" title="Профильный хаб">*</span>
+        </div>
+    </div>
+
+    <div class="post__body post__body_crop ">
+        <div class="content html_format">В 90-е сложилась интересная ситуация: вычислительные мощности компьютеров были недостаточны для расчета хоть сколько-нибудь реалистичной графики и в тоже время компакт-диски предоставляли возможность записать огромный для тех времен объем информации. В общем, идея лежала на поверхности: неплохо бы улучшить качество игровой картинки за счёт видео контента и есть куда этот контент записать. <br>
+            <br>
+            Но была и проблема: типичное игровое разрешение того времени — 320 на 200 точек при палитре из 256 цветов, что даёт нам 64 килобайта на кадр или полтора мегабайта на 25 кадров, при скорости чтения с компакт диска в 150 килобайт в секунду. Т.е. видео надо было жать и жать довольно сильно, а сжав, потом надо суметь декодировать, ведь мы помним, компы были слабенькие и декодирование, например, MPEG им было вообще не по силам. Тем не менее производители видео игр успешно решили проблему недостаточной производительности породив заодно множество видео-кодеков и <a href="https://wiki.multimedia.cx/index.php/Category:Game_Formats">игровых видео-форматов</a>, некоторые из которых могли проигрываться аж 286-м (прописью: двести восемьдесят шестым) процессором. <br>
+            <br>
+            Так началась эпоха <a href="https://ru.wikipedia.org/wiki/FMV">FMV игр</a> (Full Motion Video Games). Я думаю, многие помнят её ярких представителей: <a href="http://www.mobygames.com/game/crime-patrol">Crime Patrol</a> от American Laser Games, <a href="http://www.mobygames.com/game/lost-eden">Lost Eden</a>, <a href="http://www.mobygames.com/game/cyberia">Cyberia</a>, <a href="http://www.mobygames.com/game/novastorm">Novastorm</a> и даже <a href="http://www.mobygames.com/game/command-conquer">Command &amp; Conquer</a>, в который многие играли только ради видеовставок между миссиями. В те времена выглядело это очень круто. Вау! Вау! Ну а мне было интересно, как же они закодировали это видео, в книжках о мультимедиа приводили то же описание проблемы, что и я выше, но ничего внятного о методах сжатия не писали, видимо, авторы в этом мало понимали и пересказывали какие-то сомнительные слухи. <br>
+            <br>
+            На самом деле, всё оказалось очень просто, методов было всего три штуки и все очень простые.<br>
+        </div>
+        <div class="buttons" style="padding: 20px 0 0;">
+            <a class="button" href="https://habrahabr.ru/post/325968/#habracut">Читать дальше →</a>
+        </div>
+
+    </div>
+
+    <div class="post__footer">
+        <div class="infopanel_wrapper js-user_">
+            <ul class="postinfo-panel " id="infopanel_post_325968">
+
+                <li class="postinfo-panel__item">
+                    <div class="voting-wjt voting-wjt_infopanel js-voting  ">
+                        <button type="button" class="voting-wjt__button voting-wjt__button_plus js-plus" title="Нравится" onclick="if (typeof ga === 'function') { ga('send', 'event', 'voting_location', 'plus' );} posts_vote(this, 325968, '2', 1);">
+                            <span>↑</span>
+                        </button>
+
+                        <div class="voting-wjt__counter js-mark">
+                            <button type="button" class="voting-wjt__button voting-wjt__button_score js-score" title="Посмотреть результат" onclick="if (typeof ga === 'function') { ga('send', 'event', 'voting_location', 'zero' );} posts_vote(this, 325968, '2', 0); ">—</button>
+                        </div>
+
+                        <button type="button" class="voting-wjt__button voting-wjt__button_minus js-minus" title="Не нравится" onclick="if (typeof ga === 'function') { ga('send', 'event', 'voting_location', 'minus' );} posts_vote(this, 325968, '2', -1);">
+                            <span>↓</span>
+                        </button>
+
+                    </div>
+                </li>
+
+                <li class="postinfo-panel__item">
+                    <div class="views-count_post" title="Просмотры публикации">1,4k</div>
+                </li>
+
+                <li class="postinfo-panel__item">
+                    <div class="favorite-wjt favorite">
+                        <button type="button" class="favorite-wjt__button add" title="Добавить в избранное" onclick="return posts_add_to_favorite(this, '2', 325968);">
+                            <span>В избранное</span>
+                        </button>
+                        <span class="favorite-wjt__counter js-favs_count" title="Количество пользователей, добавивших публикацию в избранное">6</span>
+                    </div>
+                </li>
+
+                <li class="postinfo-panel__item post-author">
+                    <a title="Автор публикации" class="post-author__link" href="https://habrahabr.ru/users/yannmar/">
+                        <span class="post-author__pic_default user-pic_pink"></span>@yannmar
+                    </a>
+                </li>
+
+                <li class="postinfo-panel__item postinfo-panel__item_comments">
+                    <div class="post-comments">
+                        <a href="https://habrahabr.ru/post/325968/#comments" class="post-comments__link post-comments__link_all" title="Читать комментарии">3</a>
+
+                        <a href="https://habrahabr.ru/post/325968/#comments" class="post-comments__link post-comments__link_new" title="Читать новые комментарии">+3</a>
+
+                    </div>
+                </li>
+
+                <li class="postinfo-panel__item postinfo-panel__item_align-right">
+
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
