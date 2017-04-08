@@ -8,8 +8,12 @@ componentLibrary(
         baseUrl: '/habrahabr/dist/',
         css: [
             'https://habracdn.net/habr/styles/_build/global_main.css',
-            'https://habracdn.net/habr/styles/_parts/posts.css'
+            'https://habracdn.net/habr/styles/_parts/posts.css',
+            'https://habracdn.net/habr/styles/_build/post_common_css.css'
+        ],
+        js: [
+            'https://habracdn.net/habr/javascripts/app.vendors.js',
+            'https://habracdn.net/habr/javascripts/app.main.js'
         ]
-
     }
 );
