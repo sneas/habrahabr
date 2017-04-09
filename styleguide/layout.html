@@ -1,18 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html class="fonts-loaded">
 <head>
-    <style type="text/css">
-        @font-face{font-family:'Fira Sans';font-style:normal;font-weight:500;src:url(/fonts/0/FiraSans/hg-FiraSans-Medium.eot);src:local("Fira Sans Medium"),local("FiraSans-Medium"),url(/fonts/0/FiraSans/hg-FiraSans-Medium.eot?#iefix) format("embedded-opentype"),url(/fonts/0/FiraSans/hg-FiraSans-Medium.woff2) format("woff2"),url(/fonts/0/FiraSans/hg-FiraSans-Medium.woff) format("woff"),url(/fonts/0/FiraSans/hg-FiraSans-Medium.ttf) format("truetype")}
-    </style>
-
-
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:500" rel="stylesheet">
-
-    <script>
-        (function( w ){
-            document.documentElement.classList.add('fonts-loaded');
-        }(this));
-    </script>
 
     <script type="text/javascript">
         // global vars
@@ -27,9 +16,29 @@
     </script>
 
     <script src="https://habracdn.net/habr/javascripts/libs/jquery-1.8.3.min.js"></script>
+
+    <!-- Спрячим кнопку обновления комментариев -->
+    <style>
+        #xpanel {
+            display: none;
+        }
+    </style>
 </head>
 <body class="nl">
-    <ul id="navbar-links"></ul>
+    <!-- Javascript пуляет ошибку если формы ниже не существует на странице -->
+    <form action="/search/#h" method="get" class="search-form" id="search-form" style="display: none;">
+        <!-- Я вернулся братиш, после стольких лет разлуки:) -->
+        <button type="button" class="btn btn_navbar_search icon-svg_search" id="search-form-btn">
+            <svg class="icon-svg" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" version="1.1" role="img"><path d="M21.416 13.21c0 4.6-3.65 8.34-8.14 8.34S5.11 17.81 5.11 13.21c0-4.632 3.65-8.373 8.167-8.373 4.488 0 8.14 3.772 8.14 8.372zm1.945 7.083c1.407-2.055 2.155-4.57 2.155-7.084C25.515 6.277 20.04.665 13.277.665S1.04 6.278 1.04 13.21c0 6.93 5.475 12.542 12.237 12.542 2.454 0 4.907-.797 6.942-2.208l7.6 7.79 3.14-3.22-7.6-7.82z"></path></svg>
+        </button>
+        <label class="search-form__field-wrapper">
+            <input type="text" name="q" class="search-form__field" id="search-form-field" placeholder="Поиск" tabindex="-1">
+            <button type="button" class="btn btn_search-clear" id="search-form-clear">
+                <svg class="icon-svg icon-svg_navbar-close-search" width="31" height="32" viewBox="0 0 31 32" aria-hidden="true" version="1.1" role="img"><path d="M26.67 0L15.217 11.448 3.77 0 0 3.77l11.447 11.45L0 26.666l3.77 3.77L15.218 18.99l11.45 11.448 3.772-3.77-11.448-11.45L30.44 3.772z"></path></svg>
+
+            </button>
+        </label>
+    </form>
     <div class="layout">
         <div class="layout__row layout__row_body">
             <div class="layout__cell layout__cell_body">
