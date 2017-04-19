@@ -6,6 +6,9 @@ componentLibrary(
     {
         layout: 'styleguide/layout.html',
         baseUrl: '/habrahabr/dist/',
+        title: 'Набор компонентов сайта Хабрахабр',
+        overview: 'Все компоненты',
+        search: 'Поиск',
         css: [
             'https://habracdn.net/habr/styles/_build/global_main.css',
             'https://habracdn.net/habr/styles/_parts/posts.css',
