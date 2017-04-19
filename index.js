@@ -1,12 +1,20 @@
 const componentLibrary = require('component-library');
+const copyDir = require('copy-dir');
+
+const baseUrl = '/habrahabr/dist/';
 
 componentLibrary(
     'styleguide/templates',
     'dist',
     {
         layout: 'styleguide/layout.html',
-        baseUrl: '/habrahabr/dist/',
+        baseUrl: baseUrl,
         title: 'Набор компонентов сайта Хабрахабр',
+        favicon: {
+            href: baseUrl + 'assets/favicon-32x32.png',
+            rel: 'icon',
+            type: 'image/png'
+        },
         overview: 'Все компоненты',
         search: 'Поиск',
         css: [
@@ -19,4 +27,6 @@ componentLibrary(
             'https://habracdn.net/habr/javascripts/app.main.js'
         ]
     }
-);
+).then(function() { // Copy favicon right after component library has been compiled
+    copyDir.sync('assets', 'dist/assets');
+});
