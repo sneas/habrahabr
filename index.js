@@ -1,7 +1,13 @@
 const componentLibrary = require('component-library');
 const copyDir = require('copy-dir');
+const argv = require('argv');
 
-const baseUrl = '/habrahabr/dist/';
+const input = argv.option({
+    name: 'baseUrl',
+    type: 'string'
+}).run();
+
+const baseUrl = input.options.baseUrl || '/habrahabr/dist/';
 
 componentLibrary(
     'styleguide/templates',
